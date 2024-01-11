@@ -49,7 +49,7 @@ main {
 
 .fond {
     width: 100%;
-    height: 110vh;
+    height: fit-content;
     background-size: contain;
 }
 
@@ -142,6 +142,8 @@ h2 {
     background-size: 110vh;
     opacity: 0.8;
     display: flex;
+    justify-content: center;
+    align-items: center;
     /* filter: grayscale(100%); */
 }
 
@@ -173,22 +175,27 @@ h2 {
 }
 
 .lifeStyle {
+    height: fit-content;
+    width: fit-content;
     z-index: 69;
     position: relative;
     display: flex;
-    writing-mode: vertical-rl;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(270deg);
     text-orientation: sideways-right;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 400;
-    font-size: 7rem;
+    font-size: 5rem;
     color: #37359E;
-    
+    /* opacity: 1; */
 }
-/* section-article */
+/* section1-article */
 
 .art {
-    height: 100vh;
+    height: fit-content;
     width: 100%;  
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -197,28 +204,765 @@ h2 {
 
 .containerProduit {
     height: 40vh;
-    width: 22.5%;
+    width: 20%;
+    background-color: black;
+    margin: 1rem;
+    border: solid;
+    border-width: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 10px rgba(0,0,0,0.40);
+}
+
+.Containerimage {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
-    padding: 0.5rem;
+    align-content: space-between;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ContainerimageSN {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
 }
 
 .descriptionContainer {
+    height: 30%;
+    width: 100%;
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0,0,0,0.40);
+    border-radius: 0px 0px 20px 20px;
 }
 
 .NOUVEAU {
     background-color: #37359E;
+    color: yellow;
+    padding: 0.5rem 0.75rem;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+}
+
+.des1 {
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+}
+
+.des2 {
+    margin-left: 1vw;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
 }
 
 .gold {
     color: yellow;
+    margin-left: 1vw;
 }
 
 em {
     color: black;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+/* fin section1article */
+/* début section2article */
+
+.art2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.sect2ArticleImageVertical1, .sect2ArticleImageVertical2 {
+    width: 22.5%;
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid;
+    border-width: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.40);
+}
+
+.sect2ArticleImageVertical1:after {
+    content: "";
+    height: 28rem;
+    width: 22.5%;
+    background-color: rgba(128, 0, 128, 0.4);
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect2ArticleImageVertical2:after {
+    content: "";
+    height: 28rem;
+    width: 22.5%;
+    background-color: rgba(0, 128, 128, 0.4);
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect2ImageVertical1 {
+    height: 90%;
+    width: 200%;
+    transform: rotate(90deg);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    display: flex;
+}
+
+.sect2ImageVertical2 {
+    height: 95%;
+    width: 200%;
+    transform: rotate(90deg);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    display: flex;
+}
+
+
+.sect2ArticleImageHorizontal1, .sect2ArticleImageHorizontal2 {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid;
+    border-width: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.40);
+}
+.sect2ArticleImageHorizontal1:after {
+    content: "";
+    height: 13.5rem;
+    width: 44%;
+    background-color: rgba(128, 0, 128, 0.4);
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+}
+
+.sect2ArticleImageHorizontal2:after {
+    content: "";
+    height: 13.5rem;
+    width: 44%;
+    background-color: rgba(0, 253, 43, 0.188);
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+}
+
+.intersectionImage{
+    height: 30rem;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around ;
+}
+
+.sect2ImageHorizontal1, .sect2ImageHorizontal2 {
+    height: 15.75rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+/* fin section2article */
+/* début  btndiv*/
+
+.btnMoreProduct {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDescriptionDiv1 {
+    height: 1rem;
+    width: 15rem;
+}
+
+.btnDescriptionDiv2 {
+    height: 1rem;
+    width: 15rem;
+}
+
+.btnDescription {
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Advent Pro', sans-serif;
+    color: #F0FDBE;
+}
+
+.moreProductDiv {
+    height: fit-content;
+    width: fit-content;
+}
+
+.moreProduct {
+    height: 4rem;
+    width: 12rem;
+    background: linear-gradient(360deg, rgba(2,0,36,1) 15%, rgba(55,53,158,1) 50%);
+    border-radius: 20px;
+    font-size: xx-large;
+    color: #F0FDBE;
+    font-weight: 500;
+    font-family: 'Advent Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.40);
+}
+
+/* fin btndiv*/
+/* début divImagePrairie */
+
+.divImage {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1.5rem 0;
+    display: flex;
+}
+
+.divImagePara {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pTitre {
+    width: fit-content;
+    height: fit-content;
+    font-size: 4rem;
+    font-family: 'Advent Pro', sans-serif;
+    margin: 1rem;
+}
+
+.pPara1 {
+    width: 60%;
+    height: fit-content;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.pPara2 {
+    width: 60%;
+    height: fit-content;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+/* début footer */
+
+footer {
+    height: fit-content;
+    width: 100%;
+}
+
+.divLogo {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLogo1 {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 25px;
+    margin: 2rem;
+}
+
+.imageLogo2 {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 25px;
+    margin: 2rem;
+    transform: scale(1.5);
+}
+
+
+.imageLogo2div {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLogo3 {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+    border-radius: 30px;
+    background-color: white;
+    margin: 2rem;
+}
+
+/* div PAY */
+
+.divPay {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePay1 {
+    height: 2rem;
+    width: 5rem;
+    padding: 0.1rem;
+    background-color: white;
+    margin: 0.5rem;
+}
+
+.imagePay2 {
+    height: 2rem;
+    width: 4rem;
+    border-radius: 5px;
+    padding: 0.1rem;
+    background-color: white;
+    margin: 0.5rem;
+}
+
+/* divdugrandpara */
+
+.divGrandPara{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.divMoyenPara{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divPetitPara{
+    height: fit-content;
+    width: 25%;
+}
+
+.petitParaTitre {
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+ul {
+    height: fit-content;
+    width: 100%;
+    color: white;
+    padding: 0;
+}
+
+li {
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+/* media query */
+/* @media only screen and (min-width: 1439px) {
+
+} */
+
+
+@media only screen and (max-width: 1010px) {
+    header {
+    height: 7rem;
+}
+
+    .recherche {
+        margin: 3rem 3rem 0rem 3rem;
+    }
+
+    nav {
+        width: 45vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+
+    .fond {
+        width: 100%;
+        height: fit-content;
+        background-size: cover;
+    }
+    
+    .titre {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    h1 {
+        width: fit-content;
+        height: fit-content;
+        color: #F0FDBE;
+        text-align: start;
+        font-size: 5rem;
+        margin: 1rem;
+    }
+
+    .if {
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+    .if:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #00FD2B30;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    h2 {
+        height: fit-content;
+        z-index: 42;
+        position: relative;
+        margin: 0;
+        font-family: 'Advent Pro', sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #37359E;
+    }
+    
+    .para {
+        height: 100%;
+        width: 100%;
+    }
+
+    .lifeStyle {
+        color: red;
+        font-size: 3rem;
+    }
+     .plus, .moreInfo {
+        height: 0;
+        width: 0;
+        color: transparent;
+     }
+
+    .ipara {
+        z-index: 42;
+        position: relative;
+        height: 100%;
+        width: 35%;
+        background-position: 50%;
+        background-size: 110vh;
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* part1 fin */
+
+    .containerProduit {
+        height: 40vh;
+        width: 35%;
+        margin: 1rem 0;
+    }
+
+    /*  container fois 4 */
+    .sect2ArticleImageHorizontal2 {
+        height: 0;
+        width: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .sect2ArticleImageHorizontal1, .sect2ArticleImageVertical1, .sect2ArticleImageVertical2  {
+        height: 15rem;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: solid;
+        border-width: 0.5rem;
+        border-radius: 25px;
+        box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.40);
+        margin: 0.5rem 0;
+    }
+
+    
+.sect2ArticleImageHorizontal1:after, .sect2ArticleImageVertical1:after, .sect2ArticleImageVertical2:after{
+    content: "";
+    height: 15rem;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+}
+
+.sect2ArticleImageHorizontal2:after {
+    height: 0;
+    width: 0;
+}
+
+    .sect2ImageVertical2 ,.sect2ImageVertical1{
+        transform: rotate(90deg);
+        height: auto;
+        width: 100%;
+    }
+    .sect2ArticleImageHorizontal2:after {
+        background-color: transparent;
+    }
+    
+    .intersectionImage{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around ;
+    }
+    
+    .sect2ImageHorizontal1, .sect2ImageVertical1, .sect2ImageVertical2 {
+        height: 15.75rem;
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+/* ethique */
+.divImage {
+    width: 100%;
+    height: fit-content;
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divImagePara {
+    width: 90%;
+    height: 40%;
+}
+
+.pTitre {
+    font-size: 3rem;
+}
+
+.pPara2, .pPara1 {
+    width: 80%;
+}
+
+/*  lien */
+.divGrandPara{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.divMoyenPara{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.divPetitPara{
+    height: fit-content;
+    width: 25%;
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .containerProduit {
+        height: 40vh;
+        width: 40%;
+        margin: 1rem 0;
+    }
+
+    .sect2ArticleImageHorizontal2 {
+        height: 0;
+        width: 0;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .sect2ArticleImageHorizontal2:after {
+        background-color: transparent;
+    }
+
+    .sect2ArticleImageHorizontal1, .sect2ArticleImageVertical1, .sect2ArticleImageVertical2  {
+        height: 15rem;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: solid;
+        border-width: 0.5rem;
+        border-radius: 25px;
+        box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.40);
+        margin: 0.5rem 0;
+    }
+
+    
+.sect2ArticleImageHorizontal1:after, .sect2ArticleImageVertical1:after, .sect2ArticleImageVertical2:after{
+    content: "";
+    height: 15rem;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 18px;
+}
+
+.lifeStyle {
+    color: red;
+    font-size: 3rem;
+    height: 5rem;
+
+}
+
+h2 {
+    height: fit-content;
+    z-index: 42;
+    position: relative;
+    margin: 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #37359E;
+}
+
+.sect2ArticleImageHorizontal2:after {
+    height: 0;
+    width: 0;
+}
+
+/* ethique */
+.divImage {
+    width: 100%;
+    height: fit-content;
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divImagePara {
+    width: 90%;
+    height: 40%;
+}
+
+.pTitre {
+    width: fit-content;
+    height: fit-content;
+    font-size: 2rem;
+    font-family: 'Advent Pro', sans-serif;
+    margin: 1rem;
+}
+
+.pPara2, .pPara1 {
+    width: 80%;
+}
+
+/*  lien */
+.divGrandPara{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.divMoyenPara{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.divPetitPara{
+    height: fit-content;
+    width: 25%;
+}
 }
